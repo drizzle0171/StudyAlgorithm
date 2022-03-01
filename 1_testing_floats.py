@@ -1,6 +1,9 @@
 from fractions import Fraction
 
 def rounding_floats(number1, places):
+    """round(x, n):
+    - n이 음수인 경우, x를 정수 n번째 자리에서 반올림한 값 반환
+    - n이 양수인 경우, x를 소수점 이하 n번째 자리로 반올림한 값"""
     return round(number1, places)
 
 def float_to_fractions(number):
