@@ -37,3 +37,6 @@ ordered_array = merge_sort(array)
 
 for i in range(N):
     print(array[i])
+
+# RecursionError는 재귀와 관련된 에러입니다. 가장 많이 발생하는 이유는 Python이 정한 최대 재귀 깊이보다 재귀의 깊이가 더 깊어질 때입니다.
+

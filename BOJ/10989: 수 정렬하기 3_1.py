@@ -8,6 +8,7 @@ N_list = []
 
 for i in range(N):
     N_list.append(int(sys.stdin.readline()))
+    #for문 속에서 append를 쓰게 되면 메모리 재할당이 이루어져서 메모리를 효율적으로 사용하지 못함
 
 # 버블 정렬 사용해보기
 
