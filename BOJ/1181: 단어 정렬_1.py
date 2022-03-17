@@ -5,8 +5,14 @@ words = set()
 for _ in range(N):
     words.add(sys.stdin.readline().strip())
 
-words = list(words)
-words.sort(key = len)
-
-for word in words:
+words = list(word)
+words.sort(key=lambda x: (len(x), x))
+# answer = set(words) - 실패
+answer = []
+for i in range(N):
+    if words[i] in answer:
+        continue
+    else:
+        answer.append(words[i])
+for word in answer:
     print(word)

@@ -10,12 +10,12 @@ for _ in range(N):
     words.append(sys.stdin.readline().strip())
 
 words.sort(key=lambda x: (len(x), x))
-answer = set(words)
-# answer = []
-# for i in range(N):
-#     if words[i] in answer:
-#         continue
-#     else:
-#         answer.append(words[i])
+# answer = set(words) - 실패
+answer = []
+for i in range(N):
+    if words[i] in answer:
+        continue
+    else:
+        answer.append(words[i])
 for word in answer:
     print(word)
