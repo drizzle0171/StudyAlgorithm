@@ -24,6 +24,3 @@ for _ in range(N):
     right, left = 0, 0
     print(result)
     result = ''
-
-    # right, left를 전체가 다 돌고도 확인을 해야 하는데 이미 0으로 초기화 시켜서 못함
-    # 위에서 right == left 를 하자니 input 돌 때마다 해서 안됨
