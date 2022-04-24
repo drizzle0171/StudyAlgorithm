@@ -5,7 +5,7 @@ words = set()
 for _ in range(N):
     words.add(sys.stdin.readline().strip())
 
-words = list(word)
+words = list(words)
 words.sort(key=lambda x: (len(x), x))
 # answer = set(words) - 실패
 answer = []
