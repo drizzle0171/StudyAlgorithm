@@ -1,6 +1,5 @@
 import sys
 
-
 order = int(sys.stdin.readline())
 deque =[]
 
