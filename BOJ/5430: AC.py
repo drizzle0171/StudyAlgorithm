@@ -10,7 +10,10 @@ for i in range(TestNum):
         if ((len(seq) == 0) and order=='D'):
             seq = 'error'
         elif order == 'R':
-            seq = list(reversed(seq))
+            seq.reverse()
         else:
             seq.pop(0)
+    if seq != 'error':
+        for j in range(len(seq)):
+            seq[j] = int(seq[j])
     print(seq)
