@@ -80,4 +80,4 @@ for _ in range(m):
         if find(a) == find(b):
             print('yes')
         else:
-            print('no')
+            print('no!')
