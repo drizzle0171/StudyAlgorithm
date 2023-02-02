@@ -1,26 +1,22 @@
 import sys
 input = sys.stdin.readline
 
-n = input()
+n = int(input())
 m = int(input())
-if m:
-    broken = list(map(int, input().split()))
-elif n == 100:
-    print(0)
-else:
-    print(len(n))
+remote = {str(x) for x in range(10)}
 
-current = 100
-button = list(range(9))
-cnt = 0
+if m != 0:
+    remote -= set(input().split())
 
-for i in broken:
-    button[i] = 'n'
+min_cnt = abs(100-n)
 
-channel = []
-k = 0
-while(len(channel) != len(n)):
-    if button[n[k]] != 'n':
-        channel.append(button[n[k]])
-    else:
-        
+for k in range(1000001):
+    num = str(k)
+    print(num)
+    for i in range(len(num)):
+        if num[i] not in remote:
+            break
+        if i == len(num)-1:
+            min_cnt = min(min_cnt, abs(n-k)+len(num))
+
+print(min_cnt)
